@@ -1,0 +1,26 @@
+<footer>
+    Copyright © <span></span> - <a
+        href="https://bogdan-bogdanovic.com/en/"
+        rel="noopener noreferrer">Bogdan Bogdanovic</a
+    >
+</footer>
+
+<script>
+    document.querySelector('footer span')!.textContent = new Date()
+        .getFullYear()
+        .toString();
+</script>
+
+<style>
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: var(--dark-blue);
+        color: var(--white);
+    }
+
+    a {
+        color: var(--blue);
+        font-weight: 700;
+    }
+</style>
