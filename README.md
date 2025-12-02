@@ -59,8 +59,12 @@ Preview your build locally before deploying
 
 ## 🔗 Integrated Applications
 
-- **Moj Broj**: [https://bbtools-moj-broj.netlify.app/](https://bbtools-moj-broj.netlify.app/)
-- **Slagalica**: [https://bbtools-slagalica.netlify.app/](https://bbtools-slagalica.netlify.app/)
+- **Moj Broj**:
+    - live: [https://bbtools-moj-broj.netlify.app/](https://bbtools-moj-broj.netlify.app/)
+    - source: [https://github.com/bbtools-ps/slagalica-igra](https://github.com/bbtools-ps/slagalica-igra)
+- **Slagalica**:
+    - live: [https://bbtools-slagalica.netlify.app/](https://bbtools-slagalica.netlify.app/)
+    - source: [https://github.com/bbtools-ps/moj-broj](https://github.com/bbtools-ps/moj-broj)
 
 ## 🛠️ Technology Stack
 
