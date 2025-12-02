@@ -1,43 +1,98 @@
-# Astro Starter Kit: Minimal
+# Slagalica - Main Application
+
+A modern web application that integrates two popular games from the Serbian quiz show "Slagalica" using a microfrontend architecture built with Astro.
+
+## 🎮 About
+
+This project serves as a central hub for two independently developed game applications:
+
+- **Moj Broj** - A mathematical numbers game (React + Vite)
+- **Slagalica** - A word puzzle game (Custom MVC + Parcel)
+
+Both games are hosted separately on Netlify and integrated into this Astro application using iframe-based microfrontend architecture.
+
+## 🏗️ Architecture
+
+This application demonstrates a **microfrontend architecture** where:
+
+- Each game is developed and deployed independently
+- The main Astro app acts as a shell/host application
+- Games are loaded at runtime via iframes
+- Complete isolation between applications (styles, scripts, state)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- pnpm
+
+### Installation
 
 ```sh
-pnpm create astro@latest -- --template minimal
+pnpm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Development
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+pnpm dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Starts local dev server at `localhost:4321`
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Build
 
-Any static assets, like images, can be placed in the `public/` directory.
+```sh
+pnpm build
+```
 
-## 🧞 Commands
+Build your production site to `./dist/`
 
-All commands are run from the root of the project, from a terminal:
+### Preview
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+```sh
+pnpm preview
+```
 
-## 👀 Want to learn more?
+Preview your build locally before deploying
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🔗 Integrated Applications
+
+- **Moj Broj**: [https://bbtools-moj-broj.netlify.app/](https://bbtools-moj-broj.netlify.app/)
+- **Slagalica**: [https://bbtools-slagalica.netlify.app/](https://bbtools-slagalica.netlify.app/)
+
+## 🛠️ Technology Stack
+
+- **Framework**: [Astro](https://astro.build)
+- **Package Manager**: pnpm
+- **Integration Pattern**: Iframe-based microfrontends
+- **Deployment**: Netlify (for all applications)
+
+## 📝 Key Features
+
+- ✅ **Independent Deployments** - Each game can be updated without affecting others
+- ✅ **Loading States** - Custom spinner component with smooth transitions
+- ✅ **Reusable Components** - `MicrofrontendFrame` for easy integration of new apps
+- ✅ **Type Safety** - TypeScript support throughout
+- ✅ **Modern Build** - Optimized Astro builds for performance
+
+## 🧞 Available Commands
+
+| Command          | Action                                           |
+| :--------------- | :----------------------------------------------- |
+| `pnpm install`   | Installs dependencies                            |
+| `pnpm dev`       | Starts local dev server at `localhost:4321`      |
+| `pnpm build`     | Build your production site to `./dist/`          |
+| `pnpm preview`   | Preview your build locally, before deploying     |
+| `pnpm format`    | Format code with Prettier                        |
+| `pnpm astro ...` | Run CLI commands like `astro add`, `astro check` |
+
+## 📚 Learn More
+
+- [Astro Documentation](https://docs.astro.build)
+- [Microfrontend Architecture](https://micro-frontends.org/)
+
+## 📄 License
+
+This project is part of the BBTools collection.
